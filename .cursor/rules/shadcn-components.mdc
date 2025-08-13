@@ -1,0 +1,51 @@
+---
+alwaysApply: true
+---
+
+# Component Standards
+
+## UI Component Library
+**Use shadcn/ui components** as the primary UI component library for this project.
+
+### Available Components
+The following shadcn/ui components are available in `components/ui/`:
+- [button.tsx](mdc:components/ui/button.tsx) - Button component with variants
+- [input.tsx](mdc:components/ui/input.tsx) - Input field component
+- [label.tsx](mdc:components/ui/label.tsx) - Label component for form elements
+
+### Usage Pattern
+```tsx
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+```
+
+### Component Variants
+Use the built-in variants and sizes provided by shadcn/ui:
+```tsx
+// Button variants
+<Button variant="default">Default</Button>
+<Button variant="destructive">Delete</Button>
+<Button variant="outline">Outline</Button>
+<Button variant="secondary">Secondary</Button>
+<Button variant="ghost">Ghost</Button>
+<Button variant="link">Link</Button>
+
+// Button sizes
+<Button size="default">Default</Button>
+<Button size="sm">Small</Button>
+<Button size="lg">Large</Button>
+<Button size="icon">Icon Only</Button>
+```
+
+### Customization
+- Extend existing components rather than creating new ones
+- Use Tailwind classes for styling adjustments
+- Maintain consistent spacing and sizing
+- Follow the design system established by shadcn/ui
+
+### Adding New Components
+When adding new shadcn/ui components:
+1. Use `npx shadcn@latest add [component-name]`
+2. Components will be added to `components/ui/`
+3. Follow the same import pattern: `@/components/ui/[component-name]`

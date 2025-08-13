@@ -17,6 +17,9 @@
       },
       "api": {
         "awssocialmediaapp": {}
+      },
+      "storage": {
+        "s392b57c7e": {}
       }
     }
   }
