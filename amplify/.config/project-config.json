@@ -1,0 +1,16 @@
+{
+  "whyContinueWithGen1": "Prefer not to answer",
+  "projectName": "awsSocialMediaApp",
+  "version": "3.1",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "react",
+    "config": {
+      "SourceDir": "app",
+      "DistributionDir": ".next",
+      "BuildCommand": "pnpm build",
+      "StartCommand": "pnpm dev"
+    }
+  },
+  "providers": ["awscloudformation"]
+}
