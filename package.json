@@ -6,22 +6,31 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "lint:biome": "biome lint .",
+    "lint:biome:fix": "biome lint --write .",
+    "pre-commit": "npm run type-check && npm run format:check && npm run lint:biome && npm run lint",
+    "prepare": "husky"
   },
   "dependencies": {
+    "next": "15.4.2-canary.42",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.4.2-canary.42"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@biomejs/biome": "^2.1.4",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.4.2-canary.42",
-    "@eslint/eslintrc": "^3"
+    "husky": "^9.1.7",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
