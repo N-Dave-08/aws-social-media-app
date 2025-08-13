@@ -11,7 +11,7 @@ function HomePage() {
       <p className="text-gray-600">
         You are now authenticated and can access the app.
       </p>
-      {/* Your app content */}
+      social media app
     </div>
   );
 }

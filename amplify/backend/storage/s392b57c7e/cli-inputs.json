@@ -1,0 +1,14 @@
+{
+  "resourceName": "s392b57c7e",
+  "policyUUID": "92b57c7e",
+  "bucketName": "awssocialmediaapp13eafab07398421cb54a713aca4c74",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
