@@ -4,6 +4,49 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* SF Pro Font Family - iPhone System Font */
+@font-face {
+  font-family: "SF Pro";
+  src:
+    local("SF Pro Display"), local("SF Pro Text"), local("SF Pro"),
+    local("-apple-system"), local("BlinkMacSystemFont");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src:
+    local("SF Pro Display"), local("SF Pro Text"), local("SF Pro"),
+    local("-apple-system"), local("BlinkMacSystemFont");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src:
+    local("SF Pro Display"), local("SF Pro Text"), local("SF Pro"),
+    local("-apple-system"), local("BlinkMacSystemFont");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src:
+    local("SF Pro Display"), local("SF Pro Text"), local("SF Pro"),
+    local("-apple-system"), local("BlinkMacSystemFont");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-sf-pro {
+  font-family:
+    "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -89,7 +132,9 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:
+    "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
 .dark {

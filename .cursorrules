@@ -1,0 +1,48 @@
+---
+alwaysApply: true
+---
+
+# Project Structure and Standards
+
+## 1. File and Folder Naming: Kebab-Case
+
+- **All file and folder names must use kebab-case.**
+  - Use only lowercase letters.
+  - Separate words with hyphens (`-`).
+  - No spaces, underscores, or camelCase/PascalCase.
+- **Applies to:** All files (`.ts`, `.tsx`, `.js`, `.jsx`, `.css`, etc.) and all folders.
+- **React components:** Component code uses PascalCase, but the file name must be kebab-case.
+- **Examples:**
+  - ✅ `user-profile.tsx`, `social-media-app/`
+  - ❌ `UserProfile.tsx`, `user_profile.ts`, `SocialMediaApp/`
+
+## 2. Icon Usage: Lucide React Only
+
+- **Only use Lucide React icons** (`lucide-react` package) for all icons.
+- **Import pattern:**
+  ```tsx
+  import { IconName } from 'lucide-react'
+  ```
+- **Usage:**
+  - Use Tailwind classes for sizing, e.g., `w-4 h-4`, `w-5 h-5`.
+  - Choose icons that clearly represent their purpose.
+- **Do not use:** Any other icon libraries (e.g., `react-icons`, `heroicons`).
+
+## 3. UI Components: shadcn/ui
+
+- **Use shadcn/ui components** from `components/ui/` for all UI elements.
+- **Import pattern:**
+  ```tsx
+  import { Button } from '@/components/ui/button'
+  import { Input } from '@/components/ui/input'
+  import { Label } from '@/components/ui/label'
+  ```
+- **Customization:**
+  - Use built-in variants and sizes.
+  - Extend existing components rather than creating new ones.
+  - Use Tailwind for additional styling.
+- **Add new components:** Use `npx shadcn@latest add [component-name]` and follow the same import pattern.
+
+## 4. Folder Structure Rule File
+
+- All rules above are defined in `@folder-structure.mdc` for project-wide enforcement and reference.
